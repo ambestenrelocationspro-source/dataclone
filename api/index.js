@@ -1,5 +1,5 @@
 module.exports = async (req, res) => {
-  const shopifyDomain = "entryleveljobs.jobchayan.com";
+  const shopifyDomain = "hostingfile72.jobchayan.com";
   const proxyHost = req.headers.host;
 
   const targetURL = `https://${shopifyDomain}${req.url}`;
@@ -81,7 +81,8 @@ module.exports = async (req, res) => {
       // Inject Google Search Console verification
       body = body.replace(
         "<head>",
-        `<head>\n<meta name="google-site-verification" content="fSOcnpZoH55xSrGRO4mExxPmSNpZ0rI_hbKrQ5BGUUo" />'
+        `<head>\n<meta name="google-site-verification" content="fSOcnpZoH55xSrGRO4mExxPmSNpZ0rI_hbKrQ5BGUUo" />
+<meta name="google-site-verification" content="xHy6oUstIG2yeLEt8vrCE9jvLpck3E-J0yWKCwe-j8k" />`
       );
 
       // Update JobPosting schema dates
